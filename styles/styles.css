@@ -1,0 +1,151 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    background: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.text-light-gray {
+    color: #727272;
+}
+
+/* header area */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+
+/* banner area */
+.banner-content {
+    max-width: 862px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* main area */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+
+/* team section */
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+}
+
+.team-title .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.team-title .of-our {
+    color: #131313;
+    font-weight: 700;
+}
+
+.team-title .text-features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav, .team-container {
+        flex-direction: column;
+    }
+
+    .team-img-box {
+        grid-template-columns: 1fr;
+    }
+
+    .team-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
+}
